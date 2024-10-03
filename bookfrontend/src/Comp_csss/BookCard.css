@@ -1,0 +1,140 @@
+/* BookCard.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.bookcard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.bookcard-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookcard-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.bookcard-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookcard-form button:hover {
+  background-color: #4cae4c;
+}
+
+.book-list-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.book-list-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.book-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column; /* Change to column layout */
+}
+
+.book-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Space between image and details */
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-details span {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* Styles for the book actions container */
+.book-actions {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space buttons evenly */
+  margin-top: 10px; /* Spacing above the actions */
+}
+
+/* General button styles */
+.book-actions button {
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for buttons */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  margin-right: 10px; /* Spacing between buttons */
+}
+
+/* Hover effect for buttons */
+.book-actions button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Remove button specific styles */
+.book-actions button:last-child {
+  background-color: #dc3545; /* Danger color for remove button */
+}
+
+.book-actions button:last-child:hover {
+  background-color: #c82333; /* Darker shade for remove button on hover */
+}

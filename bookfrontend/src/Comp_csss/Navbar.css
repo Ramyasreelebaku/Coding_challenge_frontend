@@ -1,0 +1,41 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 20px 20px; /* Padding for the navbar */
+    justify-content: space-between; /* Space between elements */
+  }
+  
+  /* Title styling */
+  .navbar h2 {
+    margin: 0;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    padding: 8px; /* Padding for the search bar */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin: 0 20px; /* Margin for spacing */
+    width: 700px; /* Width of the search bar */
+  }
+  
+  /* Navigation links styling */
+  .nav-links {
+    display: flex; /* Flex display for horizontal layout */
+  }
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    margin-left: 30px; /* Space between links */
+    transition: color 0.3s; /* Transition effect */
+  }
+  
+  .nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
